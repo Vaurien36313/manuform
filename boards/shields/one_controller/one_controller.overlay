@@ -1,9 +1,10 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include "one_controller-layouts.dtsi"
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix-transform = &default_transform;
+      zmk,kscan = &kscan0;
+      zmk,physical-layout = &physical_layout0;
     };
 
     /* Matrix scan (6x12), diode direction COL2ROW */

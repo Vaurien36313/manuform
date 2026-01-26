@@ -22,9 +22,9 @@
             &kp TAB &kp Z &kp X &kp C &kp V &kp B             &kp N &kp M &kp COMMA &kp DOT &kp SLASH &kp BACKSLASH 
 
               &kp C_VOLUME_DOWN &kp C_VOLUME_UP                 &kp C_PLAY_PAUSE &kp C_NEXT 
-                      &kp LEFT_GUI &kp BACKSPACE                          &kp SPACE &kp KP_ENTER 
-                              &mo 1 &kp LEFT_ALT                               &kp LEFT_CONTROL  &kp LEFT_SHIFT 
-                              &kp LEFT_CONTROL                                    &kp LEFT_SHIFT  &mo 2
+                      &kp LEFT_GUI &kp BACKSPACE                  &kp SPACE &kp KP_ENTER 
+                      &mo 1 &kp LEFT_ALT                         &kp LEFT_CONTROL  &kp LEFT_SHIFT 
+                      &kp LEFT_CONTROL  &kp LEFT_SHIFT            &kp DEL &mo 2
           >;
         };layer1 {
           bindings = <
@@ -49,6 +49,12 @@
                         &trans &trans                                       &kp KP_N0 &trans 
                         &trans &trans                                       &kp KP_DOT &trans
           >;
+        };extra1 {
+            status = "reserved";
+        };
+
+        extra2 {
+            status = "reserved";
         };
     };
   };
