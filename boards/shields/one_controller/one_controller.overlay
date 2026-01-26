@@ -40,8 +40,8 @@
             ;
 
         /* QMK DEBOUNCE 5ms -> ZMK per-driver debounce */
-        debounce-press-ms = <5>;
-        debounce-release-ms = <5>;
+        debounce-press-ms = <10>;
+        debounce-release-ms = <10>;
     };
 
     /*
