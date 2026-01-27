@@ -14,30 +14,30 @@
         wakeup-source;
 
         /* Columns are outputs for col2row */
-        col-gpios
-            = <&pro_micro 6  GPIO_ACTIVE_HIGH>  /* D7 */
-            , <&pro_micro 7  GPIO_ACTIVE_HIGH>  /* E6 */
-            , <&pro_micro 8  GPIO_ACTIVE_HIGH>  /* B4 */
-            , <&pro_micro 9  GPIO_ACTIVE_HIGH>  /* B5 */
-            , <&pro_micro 21 GPIO_ACTIVE_HIGH>  /* F4 / A3 */
-            , <&pro_micro 20 GPIO_ACTIVE_HIGH>  /* F5 / A2 */
-            , <&pro_micro 19 GPIO_ACTIVE_HIGH>  /* F6 / A1 */
-            , <&pro_micro 18 GPIO_ACTIVE_HIGH>  /* F7 / A0 */
-            , <&pro_micro 15 GPIO_ACTIVE_HIGH>  /* B1 */
-            , <&pro_micro 14 GPIO_ACTIVE_HIGH>  /* B3 */
-            , <&pro_micro 16 GPIO_ACTIVE_HIGH>  /* B2 */
-            , <&pro_micro 10 GPIO_ACTIVE_HIGH>  /* B6 */
-            ;
+col-gpios = <
+    &gpio0 11 GPIO_ACTIVE_HIGH  /* P0.11 */
+    &gpio1 0  GPIO_ACTIVE_HIGH  /* P1.00 */
+    &gpio1 4  GPIO_ACTIVE_HIGH  /* P1.04 */
+    &gpio1 6  GPIO_ACTIVE_HIGH  /* P1.06  (MOVED: was P0.24) */
+    &gpio0 29 GPIO_ACTIVE_HIGH  /* P0.29 */
+    &gpio0 31 GPIO_ACTIVE_HIGH  /* P0.31 */
+    &gpio0 2  GPIO_ACTIVE_HIGH  /* P0.02 */
+    &gpio1 13 GPIO_ACTIVE_HIGH  /* P1.13 */
+    &gpio1 15 GPIO_ACTIVE_HIGH  /* P1.15 */
+    &gpio1 11 GPIO_ACTIVE_HIGH  /* P1.11 */
+    &gpio0 10 GPIO_ACTIVE_HIGH  /* P0.10 */
+    &gpio0 9  GPIO_ACTIVE_HIGH  /* P0.09 */
+>;
 
-        /* Rows are inputs for col2row */
-        row-gpios
-            = <&pro_micro 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* D3 / TX0 */
-            , <&pro_micro 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* D2 / RX1 */
-            , <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* D1 */
-            , <&pro_micro 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* D0 */
-            , <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* D4 */
-            , <&pro_micro 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> /* C6 */
-            ;
+/* Rows are inputs for col2row */
+row-gpios = <
+    &gpio0 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.20 */
+    &gpio0 17 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.17 */
+    &gpio0 6  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.06 */
+    &gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.08 */
+    &gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.22 */
+    &gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.24 */
+>;
 
         /* QMK DEBOUNCE 5ms -> ZMK per-driver debounce */
         debounce-press-ms = <10>;
