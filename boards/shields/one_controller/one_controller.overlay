@@ -37,6 +37,7 @@ row-gpios = <
     &gpio0 8  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.08 */
     &gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.22 */
     &gpio0 24 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P0.24 */
+    &gpio1 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN) /* P1.01  NEW ROW */
 >;
 
         /* QMK DEBOUNCE 5ms -> ZMK per-driver debounce */
@@ -52,7 +53,7 @@ row-gpios = <
      */
     matrix_transform: matrix_transform {
         compatible = "zmk,matrix-transform";
-        rows = <6>;
+        rows = <7>;
         columns = <12>;
         map = <
             /* LEFT MAIN GRID: rows 0-1, cols 0-11 */
@@ -77,10 +78,10 @@ row-gpios = <
             RC(4,6)  RC(4,7)
 
             RC(5,4)  RC(5,5)
-            RC(5,6)  RC(5,7)
+            RC(6,6)  RC(6,7)
 
             RC(5,2)  RC(5,3)
-            RC(5,8)  RC(5,9)
+            RC(6,8)  RC(6,9)
         >;
     };
 };
