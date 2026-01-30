@@ -25,7 +25,7 @@ include:
     cmake-args:
       -DCONFIG_ZMK_STUDIO_LOCKING=n
       -DCONFIG_ZMK_STUDIO=y
-    artifact-name: hope_main
+    artifact-name: hope_left_main
 
   # RIGHT (peripheral): build without Studio
   - board: nice_nano_v2
