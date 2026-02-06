@@ -25,7 +25,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&tog 1>;
+            bindings = <&none>, <&to 1>;
         };
         
         // Tap-dance for layer 2: single tap does nothing, double-tap toggles layer 2
@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&none>, <&tog 2>;
+            bindings = <&none>, <&to 2>;
         };
         
         // Hold-tap for layer 1: hold for momentary, tap triggers tap-dance
