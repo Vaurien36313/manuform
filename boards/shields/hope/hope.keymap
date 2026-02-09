@@ -96,7 +96,7 @@
                 &kp F12 &kp F1 &kp F2 &kp F3 &kp F4 &kp F5                                                              &trans &trans &trans &trans &trans &trans
                 &kp F17 &trans &trans &kp UP &trans &kp F18                                                              &trans &trans &trans &trans &trans &trans 
                 &kp GRAVE &kp PAUSE_BREAK &kp LEFT &kp DOWN &kp RIGHT &trans                                                   &trans &trans &trans &trans &trans &trans 
-                &kp SPACE &kp C_BRI_DN &kp C_BRI_UP &kp C_CALC &kp PSCRN &kp NUBS          &trans &trans &trans &trans &trans &trans 
+                &kp SPACE &kp C_BRI_DN &kp C_BRI_UP &kp C_AL_CALC &kp PSCRN &kp NUBS          &trans &trans &trans &trans &trans &trans 
 
                 &kp C_MUTE &trans                                                                                       &trans &trans 
                 &trans &kp DELETE                                                                                       &trans &trans 
